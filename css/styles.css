@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado a flex-start para evitar que se centre verticalmente */
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    overflow-y: auto; /* Permite desplazamiento vertical */
+    height: 90vh; /* Limita la altura del contenedor para permitir el desplazamiento */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Controles */
+.controls {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Barra de salud del ecosistema */
+.ecosystem {
+    margin-bottom: 20px;
+}
+
+.health-bar {
+    height: 20px;
+    width: 80%;
+    background-color: green;
+    border-radius: 10px;
+    margin: 10px auto;
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.health-bar.high {
+    background-color: green;
+}
+
+.health-bar.medium {
+    background-color: yellow;
+}
+
+.health-bar.low {
+    background-color: red;
+}
+
+#ecosystemStatus {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Contenedor para la animación */
+.animation-container {
+    margin-top: 20px;
+}
+
+.animation-container img {
+    width: 100%;
+    max-height: 300px; /* Ajusta la altura máxima para que no se desborde */
+    object-fit: contain; 
+}

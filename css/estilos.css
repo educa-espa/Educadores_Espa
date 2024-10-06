@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Titulos';
+    src: url('../font/Catamaran-Regular.ttf');
+}
+@font-face {
+    font-family: 'Titulos-Bold';
+    src: url('../font/Catamaran-Bold.ttf');
+}
+/* Asegurarte de que todo ocupe el ancho completo */
+body, html {
+    color: #fff;
+    font-family: 'Titulos';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Eliminar cualquier espacio alrededor del carrusel */
+.carousel-item {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #888;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.7;
+    list-style-type: none; /* Eliminar estilo de lista */
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+    opacity: 1;
+}
+
+/* Eliminar números o contenido de los indicadores */
+.carousel-indicators li::before,
+.carousel-indicators li::after {
+    content: none !important; /* Asegura que no haya contenido */
+}
+
+/* Eliminar posibles estilos de lista numérica */
+.carousel-indicators {
+    list-style: none; /* Asegura que no haya números */
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0; /* Eliminar cualquier padding */
+    margin: 0;
+}
+
+.fondo-mario-red {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.my-6{
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
+.titulo-mario{
+    font-size: 3rem;
+    font-family: 'Titulos-Bold';
+}
+
+.bold{
+    font-family: 'Titulos-Bold';
+}
+
+.navbar-brand,
+.nav-link{
+    color: #fff;
+}
+.navbar-brand:hover,
+.nav-link:hover{
+    color: #0400e6;
+}
+.navbar-nav {
+    margin-left: auto; /* Alinea el menú hacia la derecha */
+    margin-right: 0; /* Elimina cualquier margen a la derecha */
+}
+.titulos-bold{
+    font-family:'Titulos-Bold' ;
+}
+.fs-0{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.title-mario{
+    font-size: 4.5rem;
+    font-weight: 900;
+
+}
+.subtitle-mario{
+     font-size: 3rem;
+}
+.card-dark{
+    background-color: #333;
+    color: #f5f5f5;
+}
+.question-block{
+    width: 50%;
+}
+
+.mario-60{
+    width: 60%;
+}
+.mario-65{
+    width: 65%;
+}
+.mario-70{
+    width: 70%;
+}
+.mario-75{
+    width: 75%;
+}
+.mario-85{
+    width: 55%;
+}
+
+.mario-95{
+    width: 95%;
+}
+.mario_1{
+    width: 65%;
+}
+.mario-shell{
+    width: 80%;
+}
+.fondo-mario-red {
+    background-image: url('./img/mario_1.png');
+    background-size: contain; /* Ajusta la imagen para que quepa en el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* O ajusta a la altura que prefieras */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-5 {
+    margin: 0 20px; /* Espacio horizontal entre columnas */
+}
+
+
+.fondo-mario-verde{
+    background-color: #FFF;
+    background-image: url(../img/fondo.png), linear-gradient(223deg, #00abbc, #3fe049);
+    background-size: 830px auto, auto;
+    background-position: 50%;
+    position: relative;
+}
+
+.fondo-mario-azul{
+    background-color: #FFF;
+    background-image: url(../img/fondo.png), linear-gradient(0deg, #bc00b7, #23b2ff);
+    background-size: 830px auto, auto;
+    background-position: 50%;
+    position: relative;
+}
+
+/* Estilos personalizados para el encabezado */
+.navbar-custom {
+    background-color: #0b3d91; /* Azul NASA */
+    padding: 10px; /* Espacio alrededor del encabezado */
+}
+
+.navbar-brand-custom {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem; /* Tamaño de fuente ligeramente más grande */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Alinea el menú a la derecha */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente de los enlaces */
+    padding: 10px 15px; /* Espacio entre los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e6e6e6; /* Color de hover en enlaces */
+}
+.search-input {
+    flex-grow: 1 !important; /* Ocupará el máximo espacio disponible */
+    min-width: 300px !important; /* Cambia el valor aquí para ajustar el tamaño del input */
+}
+
+.search-bar {
+    width: 350px; /* Aumenta un poco el tamaño del buscador */
+    margin-right: 20px; /* Añade espacio al lado derecho */
+}
+
+.btn-custom {
+    background-color: #0400e6 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn-custom:hover {
+    background-color: #c009f7 !important;
+}
+
+.login-btn {
+    background-color: #0b3d91;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: 1.3rem; /* Aumenta el tamaño del botón de login */
+    margin-left: 10px; /* Añade espacio al lado izquierdo del botón */
+}
+
+.login-btn:hover {
+    background-color: #072a68; /* Color más oscuro al hacer hover */
+}
+
+/* Ajusta la barra superior */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye los elementos entre el logo y el menú */
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Asegura que el footer esté al fondo */
+}
+
+/* Otros estilos de la página */
+
+/* Estilos para la sección de Recursos en Video */
+.recursos-videos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.recursos-videos h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.recursos-videos h2::before, 
+.recursos-videos h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    height: 2px;
+    background-color: #000;
+}
+
+.recursos-videos h2::before {
+    left: -220px;
+}
+
+.recursos-videos h2::after {
+    right: -220px;
+}
+
+/* Responsivo para las flechas */
+@media (max-width: 768px) {
+    .recursos-videos h2::before, 
+    .recursos-videos h2::after {
+        width: 100px;
+        
+    }
+
+    .recursos-videos h2::before {
+        left: -120px;
+    }
+
+    .recursos-videos h2::after {
+        right: -120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recursos-videos h2::before, 
+    .recursos-videos h2::after {
+        display: none;
+    }
+}
+
+.linea-izquierda,
+.linea-derecha {
+    display: inline-block;
+    width: 25%;
+    border-top: 2px solid black; /* O el color que desees */
+    vertical-align: middle;
+    margin: 0 10px; /* Espaciado entre el texto y las líneas */
+}
+
+/* Estilo de los videos */
+.recursos-videos video {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.recursos-videos iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.rec-videos {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.rec-videos iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center-videos {
+    display: flex;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    gap: 20px; /* Espacio entre los cuadros */
+    margin-top: 20px;
+}
+
+.custom-footer {
+    background-color: #000; /* Fondo oscuro */
+    color: white; /* Color blanco para el texto */
+}
+
+.custom-footer .social-link {
+    font-size: 1.5rem; /* Ajusta el tamaño de los íconos */
+    color: white; /* Color blanco para los íconos */
+    margin: 0 10px;
+    text-decoration: none; /* Elimina subrayado en los enlaces */
+}
+
+
+.custom-footer .social-link:hover {
+    color: #007bff; /* Cambia color al pasar el mouse */
+}
+
+.custom-footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos adicionales del cuadro PACE*/
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Hace que el contenedor ocupe todo el alto de la ventana */
+}
+
+.custom-card-size {
+    width: 100%;   /* Duplica el ancho del card */
+    height: auto;  /* Ajusta la altura según el contenido */
+}
+
+.custom-img-size {
+    width: 100%;   /* La imagen ocupa todo el ancho del card */
+    height: auto;  /* Mantiene la proporción de la imagen */
+}
+
+.custom-img-container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.custom-img-size-full {
+    max-width: 100%;
+    height: auto;
+}
+
+.linea-izquierda, .linea-derecha {
+    content: "";
+    display: inline-block;
+    width: 20%;
+    border-top: 2px solid black;
+    margin: 0 10px;
+}
+
+/*Estilos para el video de Aerosoles*/
+.resources h2 {
+    margin-top: 10px; /* Ajusta el valor según el espacio que necesites */
+    margin-bottom: 10px; /* Mantén este margen para la separación con el video */
+    text-align: center; /* Alinea el título al centro, si es necesario */
+}
+
+.resources img {
+    width: 100%; /* Asegúrate de ajustar el tamaño de la imagen según sea necesario */
+}
+
+.resources video {
+    margin-bottom: 60px; /* Espacio entre el video y el footer */
+}
+
+
+
+
